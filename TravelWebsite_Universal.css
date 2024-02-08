@@ -1,0 +1,136 @@
+body{
+    max-width: 1220px;
+}
+
+/* logo_menu */
+#logo_menu{
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    grid-template-areas:
+        "logo menuBar";
+    position: relative;
+    margin: 0;
+    padding: 0;
+    justify-content: left;
+    align-items: center; 
+    color:rgb(87, 6, 6);
+}
+
+#logo {
+    grid-area:logo;
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
+
+#menu { 
+    position: relative;
+    text-decoration:none;
+    margin-top: 60px;
+}
+
+#menu li { 
+    list-style-type: none;
+}
+
+.mainMenu{
+    display: inline-block;
+    margin-right: 80px;
+    font-size:25px;
+    font-weight:700; 
+}
+
+.subMenuItemD, .subMenuItemR{
+    padding: 10px;
+    font-size:20px;
+    font-weight:700;
+    background-color:rgb(186, 183, 183,0.9);
+    top:-38px;
+}
+
+.subMenuItemD{
+    left:80px;
+}
+
+.subMenuItemR{
+    left:325px;
+}
+
+.listItem{
+    padding: 3px;
+    left:-40px;
+    top:-36px;
+    font-size:18px;
+    font-weight:700;
+    display: flex;
+    justify-content: center;
+    width:124px;
+    background-size: contain;
+    background-color:rgb(186, 183, 183,0.9);
+}
+
+#menu li > ul { 
+    display: none; 
+}
+
+#menu ul li :hover {
+    color:rgb(43, 43, 207);
+}
+
+#menu li:hover > ul { 
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+
+#menu li ul li {
+    float:left;
+    position:relative;
+}
+
+/* navigation bar */
+.navigationBar{
+    font-size:26px;
+    font-weight:700;
+    margin-top:30px;
+    margin-bottom:30px;
+    padding:0;
+    color: black;
+}
+
+/* link */
+a {
+    text-decoration: none;
+    color: rgb(87, 6, 6);
+    cursor: pointer;
+  }
+
+a:hover {
+    color:rgb(43, 43, 207);
+}
+
+.seeMore-link{
+    text-decoration: underline;
+    color:rgb(87, 6, 6);
+}
+
+.readMore-link{
+    text-decoration: underline;
+    color:rgb(87, 6, 6);
+}
+
+.destination-link{
+    color: white !important;
+}
+
+footer{
+    margin-top:150px;
+    font-size:18px;
+    background-color:rgb(186, 183, 183,0.9);
+}
+
+footer p{
+    padding:10px;
+    margin:0;
+}
